@@ -57,8 +57,11 @@ async function sendRawTx({data, nonce, to, privateKey, value}) {
           value
       };
       const tx = new Transaction(rawTx);
+      // console.log(`Raw Transaction: ${JSON.stringify(tx)}`);
       tx.sign(privateKey);
+      // console.log(`Signed Transaction: ${JSON.stringify(tx)}`);
       const serializedTx = tx.serialize();
+      // console.log(`Serialized Transaction: ${serializedTx}`);
       let time = new Date().getTime();
       const txHash = await sendNodeRequest(rpcUrl, 'eth_sendRawTransaction', `0x${serializedTx.toString('hex')}`);
       console.log(`Request: ${(new Date().getTime() - time)/1000}s`)

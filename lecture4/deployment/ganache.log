@@ -40,21 +40,12 @@ Call Gas Limit
 
 Listening on 127.0.0.1:8545
 eth_getTransactionCount
-eth_getTransactionCount
-eth_getTransactionCount
-eth_getTransactionCount
-eth_getTransactionCount
-eth_getTransactionCount
 eth_sendRawTransaction
 
   Transaction: 0x67134c0f190b03bce8a25c659423550178e78273d50b234f562e5bf1e726e806
   Contract created: 0x0f5ea0a652e851678ebf77b69484bfcd31f9459b
   Gas usage: 382148
   Block Number: 1
-  Block Time: Wed Nov 04 2020 17:45:11 GMT+0200 (Eastern European Standard Time)
+  Block Time: Wed Nov 04 2020 18:10:17 GMT+0200 (Eastern European Standard Time)
 
 eth_getTransactionReceipt
-eth_call
-eth_call
-eth_call
-eth_call
