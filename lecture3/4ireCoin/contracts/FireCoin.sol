@@ -11,10 +11,10 @@ contract FireCoin {
     mapping(address => uint256) balances;
     uint256 totalSupply_;
 
-    constructor(uint256 total) public {
+    constructor(uint256 total) public {  
 	    totalSupply_ = total;
 	    balances[msg.sender] = totalSupply_;
-    }
+    }  
 
     function totalSupply() public view returns (uint256) {
 	    return totalSupply_;
